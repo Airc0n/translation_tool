@@ -1,0 +1,12 @@
+{% extends 'cms_admin/base.html' %}
+{% load staticfiles %}
+{% block extra_head %}
+{#    {{ block.super }}#}
+    <link href={% static 'translation_tool/dist/css/chunk-vendors.css' %} rel="stylesheet">
+    <link href={% static 'translation_tool/dist/css/app.css' %} rel="stylesheet">
+{% endblock %}
+{% block main_block %}
+    <div id="app">123</div>
+    <script type="text/javascript" src="{% static 'translation_tool/dist/js/chunk-vendors.js' %}"></script>
+    <script type="text/javascript" src="{% static 'translation_tool/dist/js/app.js' %}"></script>
+{% endblock %}
